@@ -5182,7 +5182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1798647323533444531, guid: 509bf3ea552a543d7b972e2a4ed29a64, type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5917159999355178160, guid: 509bf3ea552a543d7b972e2a4ed29a64, type: 3}
       propertyPath: m_Name
@@ -7032,7 +7032,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '> Reiniciar nivel'
+  m_Text: '> Siguiente nivel
+
+'
 --- !u!222 &1156266632
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7156,7 +7158,7 @@ GameObject:
   - component: {fileID: 1203130410}
   - component: {fileID: 1203130409}
   m_Layer: 5
-  m_Name: Regresar
+  m_Name: Siguiente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7226,9 +7228,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TrashCollector, Assembly-CSharp
-        m_MethodName: RetryLevel
+      - m_Target: {fileID: 1420557783}
+        m_TargetAssemblyTypeName: RutasNivelScript, Assembly-CSharp
+        m_MethodName: IrANivel4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8146,7 +8148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1300850483}
   anim: {fileID: 1300850485}
-  speed: 5
+  speed: 10
 --- !u!95 &1300850485
 Animator:
   serializedVersion: 5
@@ -8738,6 +8740,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1420557782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420557784}
+  - component: {fileID: 1420557783}
+  m_Layer: 0
+  m_Name: RutaNivelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1420557783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420557782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114c542d3a91b4a4fbfc9dcd9e0e5d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1420557784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420557782}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.7122135, y: -3.7767012, z: -0.34965873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433937296
 GameObject:
   m_ObjectHideFlags: 0
@@ -14040,3 +14086,4 @@ SceneRoots:
   - {fileID: 104396120}
   - {fileID: 937491795}
   - {fileID: 1368256042}
+  - {fileID: 1420557784}

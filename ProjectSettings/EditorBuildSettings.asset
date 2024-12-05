@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/ElegirPersonaje.unity
     guid: 7880849cbb24d4823be75fe14fdf952e
   - enabled: 1
+    path: Assets/Scenes/Nivel3.unity
+    guid: b1f93d88d73f24f2caa47a764f7d1cf9
+  - enabled: 1
+    path: Assets/Scenes/Nivel4.unity
+    guid: de859045b9c234d21a90bbd543929fb7
+  - enabled: 1
     path: Assets/Scenes/Nivel1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

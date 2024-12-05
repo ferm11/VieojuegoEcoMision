@@ -91,8 +91,10 @@ public class TrashCollector : MonoBehaviour
         // Chequear si ha recogido toda la basura
         if (collectedTrash >= totalTrash)
         {
+            Debug.Log("Nivel completado: basura recogida = " + collectedTrash);
             ShowLevelCompletePanel();
         }
+
     }
 
     void TryPickUpTrash()
@@ -118,10 +120,6 @@ public class TrashCollector : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = "Puntaje: " + score;
-        }
-        else
-        {
-            Debug.LogError("El elemento de texto del puntaje no está asignado.");
         }
     }
 
