@@ -38,7 +38,7 @@ public class ProjectilPlayer : MonoBehaviour
             VillanoScript villain = other.GetComponent<VillanoScript>();
             if (villain != null)
             {
-                villain.TakeDamage(100); // Reduce la vida del villano
+                villain.TakeDamage(30); // Reduce la vida del villano
                 AddScore(10); // Agrega 10 puntos al puntaje
             }
             Destroy(gameObject); // Destruye el proyectil

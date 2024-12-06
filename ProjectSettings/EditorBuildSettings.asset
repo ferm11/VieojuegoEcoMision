@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: ff6022c69825344d5a884a88573d6613
   - enabled: 1
+    path: Assets/Scenes/JuegoTerminado.unity
+    guid: a08b4ad33ee4a42af8697078601968a1
+  - enabled: 1
     path: Assets/Scenes/Opciones.unity
     guid: aa5ba282e881746109ba1294dc448507
   - enabled: 1
@@ -30,9 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel4.unity
     guid: de859045b9c234d21a90bbd543929fb7
   - enabled: 1
+    path: Assets/Scenes/ElegirPersonaje2.unity
+    guid: c909b462a8ad04b088208ea1613e6958
+  - enabled: 1
     path: Assets/Scenes/Nivel1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Nivel2.unity
     guid: 91b900a3a40f8435e86a08562067241e
+  - enabled: 1
+    path: Assets/Scenes/Score.unity
+    guid: 1a5e559506b1d4846a420723eb012355
   m_configObjects: {}

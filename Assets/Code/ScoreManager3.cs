@@ -28,4 +28,3 @@ public class ScoreManager3 : MonoBehaviour
     }
     
 }
-

@@ -44,18 +44,6 @@ public class Projectile : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(10f); // Daño al jugador
-
-            // Reducir el puntaje
-            if (ScoreManager3.score >= 10) // Verificar que no sea menor a 0
-            {
-                ScoreManager3.score -= 10; // Reducir el puntaje
-                Debug.Log("Puntaje reducido: " + ScoreManager3.score);
-            }
-            else
-            {
-                ScoreManager3.score = 0; // Asegurar que no sea negativo
-                Debug.Log("Puntaje mínimo alcanzado: " + ScoreManager3.score);
-            }
         }
         Destroy(gameObject); // Destruye el proyectil
     }

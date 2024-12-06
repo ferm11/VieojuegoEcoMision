@@ -830,20 +830,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "En este juego, tu misi\xF3n es salvar el mundo a trav\xE9s de la recolecci\xF3n
-    de basura y la lucha contra un villano. En el primer nivel, deber\xE1s recoger
-    la basura que aparece en el escenario y llevarla al contenedor correcto seg\xFAn
-    su tipo; para moverte utiliza las teclas de flecha y presiona la tecla E para
-    recoger la basura cuando est\xE9s cerca de ella. Si llevas la basura al contenedor
-    equivocado, tu barra de vida disminuir\xE1, as\xED que identifica correctamente
-    el contenedor asignado para cada tipo de residuo. Completar este nivel te permitir\xE1
-    avanzar al segundo, donde enfrentar\xE1s al villano disparando proyectiles mientras
-    esquivas los ataques que \xE9l te lanza; tambi\xE9n usar\xE1s las teclas de flecha
-    para moverte y la tecla E para disparar. Si los proyectiles del villano te alcanzan,
-    tu barra de vida disminuir\xE1, as\xED que mantente \xE1gil y dispara con precisi\xF3n
-    para derrotarlo. El juego termina cuando completes los dos niveles con \xE9xito;
-    si tu barra de vida llega a cero en cualquier nivel, el juego habr\xE1 terminado
-    y tendr\xE1s que intentarlo de nuevo. \xA1Buena suerte, h\xE9roe del medio ambiente! "
+  m_text: "En este juego, tu misi\xF3n es salvar el mundo recolectando basura y enfrentando
+    a un villano. En el primer nivel, recoge la basura y ll\xE9vala al contenedor
+    correcto seg\xFAn su tipo usando las flechas para moverte y la tecla E para recoger.
+    Si te equivocas de contenedor, perder\xE1s vida, as\xED que identifica bien cada
+    residuo. En el segundo nivel, enfrenta al villano disparando proyectiles con
+    E y esquivando sus ataques con las flechas. Si te alcanza, perder\xE1s vida.
+    Completa ambos niveles para ganar, pero si tu vida llega a cero, tendr\xE1s que
+    intentarlo de nuevo. \xA1Buena suerte, h\xE9roe ambiental!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -870,8 +864,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -26,4 +26,5 @@ public AudioSource backgroundMusic;  // Arrastra el AudioSource de la música al
         Time.timeScale = 1f; // Reactiva el tiempo si estaba pausado
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    
 }

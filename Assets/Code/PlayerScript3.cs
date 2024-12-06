@@ -27,6 +27,7 @@ public class PlayerScript3 : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;  // Reanudar el juego
         currentHealth = maxHealth;  // Inicializa la salud al máximo
         healthSlider.maxValue = maxHealth;  // Establece el valor máximo de la barra de salud
         healthSlider.value = currentHealth; // Establece el valor actual de la barra de salud

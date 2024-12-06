@@ -14,4 +14,9 @@ public class ReglasScript : MonoBehaviour
     {
         SceneManager.LoadScene("Opciones");
     }
+
+    public void IrAScore()
+    {
+        SceneManager.LoadScene("Score");
+    }
 }

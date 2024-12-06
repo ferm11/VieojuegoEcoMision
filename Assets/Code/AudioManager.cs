@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject); // Si ya existe, destruir este objeto
+            return;
         }
 
         audioSource = GetComponent<AudioSource>();
@@ -27,24 +28,32 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         PlayAudioForCurrentScene(); // Reproducir el audio adecuado al inicio
+        SceneManager.sceneLoaded += OnSceneLoaded; // Suscribirse al evento de cambio de escena
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        PlayAudioForCurrentScene(); // Cambiar la música al cargar una nueva escena
     }
 
     void PlayAudioForCurrentScene()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex; // Obtener el índice de la escena actual
 
-        // Si hay un clip de audio asignado para esta escena, reproducirlo
+        // Si hay un clip de audio asignado para esta escena, reproducirlo si no es el mismo
         if (sceneAudioClips.Length > sceneIndex && sceneAudioClips[sceneIndex] != null)
         {
-            audioSource.clip = sceneAudioClips[sceneIndex];
-            audioSource.Play();
+            if (audioSource.clip != sceneAudioClips[sceneIndex])
+            {
+                audioSource.clip = sceneAudioClips[sceneIndex];
+                audioSource.loop = true; // Asegurar que la música se repita
+                audioSource.Play();
+            }
         }
     }
 
-    // Método para cambiar el audio en tiempo real si lo deseas
-    public void ChangeAudioClip(AudioClip newClip)
+    private void OnDestroy()
     {
-        audioSource.clip = newClip;
-        audioSource.Play();
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Desuscribirse del evento al destruir el objeto
     }
 }
